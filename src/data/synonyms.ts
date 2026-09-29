@@ -1,0 +1,30 @@
+/** Search synonyms: query term -> catalogue terms. */
+export const synonyms: Record<string, string[]> = {
+  curd: ["curd", "dahi", "yogurt"],
+  dahi: ["curd", "yogurt"],
+  yogurt: ["curd", "yogurt"],
+  capsicum: ["capsicum", "bell pepper"],
+  "bell pepper": ["capsicum"],
+  brinjal: ["eggplant", "aubergine"],
+  ladyfinger: ["okra", "bhindi"],
+  atta: ["atta", "flour", "wheat"],
+  cooldrink: ["soft drink", "cola", "sprite"],
+  cola: ["coca-cola", "soft drink"],
+  chai: ["tea"],
+  coffee: ["coffee", "nescafé"],
+  cheese: ["cheese", "paneer"],
+  bread: ["bread", "pav", "bun"],
+  egg: ["eggs"],
+  chips: ["chips", "wafers"],
+  biscuit: ["biscuit", "cookies"],
+  maida: ["flour"],
+  aloo: ["potato"],
+  pyaz: ["onion"],
+  tamatar: ["tomato"],
+  doodh: ["milk"],
+  makhan: ["butter"],
+  chawal: ["rice"],
+  murgi: ["chicken"],
+};
+
+export const trendingSearches = ["Paneer", "Milk", "Maggi", "Cold drinks", "Ice cream", "Eggs"];
