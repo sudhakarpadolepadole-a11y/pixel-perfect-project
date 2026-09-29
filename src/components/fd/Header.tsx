@@ -25,7 +25,7 @@ export function Header({ query, onQuery }: { query: string; onQuery: (q: string)
         <label className="ai-border flex min-w-0 flex-1 items-center gap-2 rounded-xl bg-muted px-3 py-2.5">
           <Search className="h-4 w-4 shrink-0 text-muted-foreground" />
           <input value={query} onChange={(e) => onQuery(e.target.value)} placeholder={`Search "${trendingSearches[ph]}"`} className="min-w-0 flex-1 bg-transparent text-sm outline-none" />
-          <Sparkles className="h-4 w-4 shrink-0 text-ai" />
+          <Sparkles className="h-4 w-4 shrink-0 text-hot" />
         </label>
         <button aria-label="Toggle theme" onClick={actions.toggleDark} className="press shrink-0 rounded-xl p-2 hover:bg-muted">{dark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}</button>
         <button id="cart-button" onClick={() => actions.openCart(true)} className="press flex shrink-0 items-center gap-2 rounded-xl bg-brand px-3 py-2.5 text-sm font-bold text-primary-foreground hover:bg-brand-dark">

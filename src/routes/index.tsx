@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
 function Row({ title, children, ai }: { title: string; children: React.ReactNode; ai?: boolean }) {
   return (
     <section className="mt-8">
-      <h2 className="mb-3 flex items-center gap-2 font-display text-xl font-extrabold">{ai && <Sparkles className="h-5 w-5 text-ai" />}{title}</h2>
+      <h2 className="mb-3 flex items-center gap-2 font-display text-xl font-extrabold">{ai && <Sparkles className="h-5 w-5 text-hot" />}{title}</h2>
       {children}
     </section>
   );
@@ -59,7 +59,7 @@ function Home() {
               <div className="animate-fade-up relative overflow-hidden rounded-2xl bg-brand p-6 text-primary-foreground md:col-span-2">
                 <p className="text-sm font-semibold opacity-90">Freshly picked today</p>
                 <h1 className="mt-1 max-w-md font-display text-3xl font-extrabold leading-tight sm:text-4xl">Groceries at your door in 9 minutes</h1>
-                <button onClick={() => actions.openAi(true)} className="press mt-4 inline-flex items-center gap-2 rounded-xl bg-card px-4 py-2 text-sm font-bold text-foreground"><Sparkles className="h-4 w-4 text-ai" /> Ask Dash what to cook</button>
+                <button onClick={() => actions.openAi(true)} className="press mt-4 inline-flex items-center gap-2 rounded-xl bg-card px-4 py-2 text-sm font-bold text-foreground"><Sparkles className="h-4 w-4 text-hot" /> Ask Dash what to cook</button>
                 <div className="animate-bob absolute -bottom-4 right-4 text-8xl sm:text-9xl">🛵</div>
               </div>
               <div className="grid gap-3">
